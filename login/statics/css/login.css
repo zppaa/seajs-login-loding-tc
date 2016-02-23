@@ -1,0 +1,86 @@
+
+.header{
+    display: none;
+}
+.com-con{
+    width:400px;
+}
+.com-con .logo{
+    text-align: center;
+    margin-bottom: 23px;
+}
+.com-con .login-nav{
+
+    text-align:center;
+    margin-bottom: 20px;
+    border-bottom:1px solid #e6e6e6;
+    *height:68px;
+}
+.com-con .login-nav li{
+    display: inline-block;
+    *display: inline;
+    margin:0px 22px;
+    padding:20px 18px;
+    *width:103px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.com-con .login-nav li.active{
+    color:#24A570;
+    border-bottom: 3px solid #24A570;
+
+}
+.line-reg{
+    margin:20px 0px;
+}
+.third-party h4{
+    text-align: center;
+    height:7px;
+    border-bottom: 1px solid #e6e6e6;
+
+ }
+.third-party h4 span{
+    background:#fff;
+    padding:0px 20px;
+}
+.third-party-list{
+    text-align: center;
+    margin-top:26px;
+}
+
+.third-party-list a{
+    margin:0px 18px;
+}
+.get-code{
+    cursor: pointer;
+    float:right;
+    text-align:center;
+    color:#fff;
+    font-size:16px;
+    width:150px;
+    height:50px;
+    line-height:50px;
+    background:#10ba28;
+}
+.get-code-end{
+    background: #999999;
+}
+.login-form .line .input{
+    width:342px;
+    *width:337px;
+    *margin-top:-1px;
+}
+.login-form .get-code{
+    width:150px;
+}
+.login-form .line .code{
+    width:226px;
+}
+.login-form .line .code-img{
+    width:153px;
+}
+
+
+
+
+

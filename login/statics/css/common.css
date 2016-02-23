@@ -1,0 +1,75 @@
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+body{
+	height: 100%;
+}
+.page{
+	position: relative;
+	min-height: 100%;	
+}
+.width-1120{
+	width:1280px;
+	margin:0 auto;
+}
+.out-con{
+	/*footer多高，这个多高*/
+	padding-bottom:377px;
+	position: relative;
+	
+}
+/* 微信分享 */
+.share-weixin-pop{
+	position:fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+	z-index:10000;
+	width: 300px;
+	height: 300px; 
+	background: #fff;
+	display: none;
+}
+
+.share-weixin-pop img{
+	width:100%;
+	box-shadow:0px 1px 10px #fff;
+}
+.share-weixin-pop .pop-msg{
+	display: block;
+	width: 300px;
+	height: 300px; 
+}
+
+/* 更多右边的小箭头 */
+.icon-more{
+    display: inline-block;
+    position: relative;
+    top:0;
+    width:6px;
+    height:10px;
+    margin-left:8px;
+    background: url(../../img/v6/more.png) no-repeat;
+}
+a:hover .icon-more{
+    background: url(../../img/v6/more_hover.png) no-repeat;
+}
+/*主题部门宽 主题内容宽*/
+.main{
+	width: 1120px;
+    margin: 0 auto;
+    background: #fff;
+}
+.main .main-con{
+	width: 1228px;
+    margin: 0 auto
+}
+
+
+
+
+
+
+
