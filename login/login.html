@@ -22,7 +22,7 @@
   </style>
 </head>
 <body>
-<div id="load-container"></div>
+<!--<div id="load-container"></div>-->
 	<div class="con">
     <div class="com-con login-con" data-src="login.tpl"></div>
 	</div>
@@ -32,12 +32,12 @@
 <script src="statics/lib/sea-config.js"></script>
 
 <script type="text/javascript" charset = "UTF-8">
-  seajs.use("./statics/lib/loading.js",function(){
+  //seajs.use("./statics/lib/loading.js",function(){
     seajs.use('./statics/js/login',function(login){
       login.login.init({
         dom:'login-con'
       })
     });
-  });
+  //});
 
 </script>

@@ -5,12 +5,16 @@
 <div class="login-form show">
     <form id="loginForm" name="loginForm" method="post" action="" autocomplete="off" novalidate="novalidate">
         <div class="line">
-            <div class="err"></div>
+            <div class="err">
+              <span class="username-error"></span>
+            </div>
             <span class="uc-username-icon"></span>
             <input type="text" class="input" placeholder="邮箱/手机号" id="username" name="username">
         </div>
         <div class="line">
-            <div class="err"></div>
+            <div class="err">
+              <span class="password-error"></span>
+            </div>
             <span class="uc-password-icon"></span>
             <input type="password" class="input" placeholder="请输入密码" id="password" name="password">
             <s class="eye eye-close"></s>
@@ -35,16 +39,16 @@
         <div class="line">
             <div class="err"></div>
             <span class="uc-mobile-icon"></span>
-            <input type="text" class="input code-phone" placeholder="请输入手机号" name="phone">
+            <input type="text" class="input code-phone" id="code-phone" placeholder="请输入手机号" name="phone">
         </div>
 
         <div class="line clearfix">
             <div class="err"></div>
-            <input type="text" class="input code" name="phone_vcode" placeholder="请输入短信验证码">
+            <input type="text" class="input code" name="phone_vcode" id="phone_vcode" placeholder="请输入短信验证码">
             <span class="get-code">获取短信验证码</span>
         </div>
         <div class="line line-btn">
-            <input type="submit" class="btn" value="登录">
+            <input type="button" class="btn" value="登录">
         </div>
     </form>
 </div>

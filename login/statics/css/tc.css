@@ -13,7 +13,6 @@
 }
 .tc-con{
   position: fixed;
-  /* z-index: 99999; */
   border-radius: 5px;
   left: 50%;
   top: 50%;
@@ -27,7 +26,6 @@
   text-align: center;
   box-sizing: border-box;
   background: #fff;
-  /* opacity: 1; */
 }
 .out-html {
   position: relative;

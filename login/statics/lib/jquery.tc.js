@@ -5,7 +5,8 @@ define(function(require,exports,module){
       var defaults = {
         dom:'.con',
         msg:'登陆成功',
-        time:2000
+        time:2000,
+        onRender:''
       };
       var opts = $.extend(defaults, options);
       makeTc();
@@ -16,10 +17,13 @@ define(function(require,exports,module){
         html.push('<div class="out-html">')
         html.push('<img />');
         html.push('<span class="pop-msg">'+opts.msg+'</span>');
-        html.push('</diuv>')
+        html.push('</div>')
         html.push('</div>');
         html = html.join('');
         $(opts.dom).append(html);
+        if(typeof opts.onRender == 'function') {
+          opts.onRender(opts.dom,html);
+        }
         $('.tc-box,.tc-con').fadeIn();
         makeStyle();
         bindEvent();
@@ -50,7 +54,7 @@ define(function(require,exports,module){
       //过几秒自动消失
       var timer = null;
       function closeTc(){
-        timer = setTimeOut(function(){
+        timer = setTimeout(function(){
           $('.tc-box,.tc-con').fadeOut();
         },opts.time);
         clearTimeout(timer);
